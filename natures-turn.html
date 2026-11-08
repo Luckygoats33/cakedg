@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature's Turn - CAKE Development Group</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+      </div>
+      <div class="logo-text">
+        CAKE
+        <span>DEVELOPMENT GROUP</span>
+      </div>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-main">
+        <li><a href="just-green.html">Just Green</a></li>
+        <li><a href="minstar.html">Minstar</a></li>
+        <li><a href="natures-turn.html" class="active">Nature's Turn</a></li>
+        <li><a href="private-label.html">Private Label</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <ul class="nav-secondary">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="quality-assurance.html">Quality Assurance</a></li>
+        <li><a href="sustainability-ecology.html">Sustainability &amp; Ecology</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="https://cakedg.com/wp-content/uploads/2023/06/billboard-nt_0.jpg" alt="Nature's Turn Foods">
+</section>
+
+<div class="page-content">
+  <div class="page-title">
+    <h1><strong>NATURE'S TURN</strong> FOODS</h1>
+    <p class="page-subtitle">Nature's Turn is committed to providing all natural, great tasting food products to every home. We believe consumers deserve natural ingredients FREE of artificial colors, flavors and preservatives, high-fructose corn syrup, and hydrogenated oils ...taste the difference.</p>
+  </div>
+
+  <div class="main-content">
+    <div class="content-box">
+      <p>The Nature's Turn and Freshfield Farms brands were created because we, as consumers, wanted tasty all natural, consistent everyday food products from ingredients we could trust that were affordable.</p>
+      <p>We found we weren't alone and today, with our commitment to responsible manufacturing in China, we proudly deliver all-natural food products at affordable prices that our family and friends love, we hope you do as well.</p>
+      <p>This page highlights a few of our customers' favorites. If you are interested in our private label program or receiving a complete product list please <a href="contact-us.html">contact us</a>.</p>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-badge">
+      <a href="just-green.html"><img src="https://cakedg.com/wp-content/uploads/2023/06/just-green-badge.png" alt="Just Green"></a>
+      <p>Packaging Solutions, made Tree-Free from annually renewable plant fibers that are biodegradable and compostable.</p>
+    </div>
+    <div class="sidebar-badge">
+      <a href="private-label.html"><img src="https://cakedg.com/wp-content/uploads/2023/06/private-label-badge.png" alt="Private Label"></a>
+      <p>Delivering value through flexibility, function and consistency meeting Your Brand's design, production, packaging, distribution needs.</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <ul class="footer-nav">
+      <li><a href="just-green.html">Just Green</a></li>
+      <li><a href="minstar.html">Minstar</a></li>
+      <li><a href="natures-turn.html">Nature's Turn</a></li>
+      <li><a href="private-label.html">Private Label</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+    <p class="footer-copy">Copyright &copy; 2026 CAKE Development Group</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#9650;</button>
+<script>
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('scrollTop');
+  if (window.scrollY > 300) btn.classList.add('visible');
+  else btn.classList.remove('visible');
+});
+</script>
+
+</body>
+</html>

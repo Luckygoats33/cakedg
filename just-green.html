@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Green - CAKE Development Group</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+      </div>
+      <div class="logo-text">
+        CAKE
+        <span>DEVELOPMENT GROUP</span>
+      </div>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-main">
+        <li><a href="just-green.html" class="active">Just Green</a></li>
+        <li><a href="minstar.html">Minstar</a></li>
+        <li><a href="natures-turn.html">Nature's Turn</a></li>
+        <li><a href="private-label.html">Private Label</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <ul class="nav-secondary">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="quality-assurance.html">Quality Assurance</a></li>
+        <li><a href="sustainability-ecology.html">Sustainability &amp; Ecology</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="https://cakedg.com/wp-content/uploads/2023/06/JUSTGREEN_0.jpg" alt="Just Green Packaging">
+</section>
+
+<div class="page-content">
+  <div class="page-title">
+    <h1><strong>JUST GREEN</strong> PACKAGING</h1>
+    <p class="page-subtitle">Just Green delivers well-designed, high quality, annually renewable plant fiber packaging solutions at competitive prices for the retail consumer and food packaging industries.</p>
+  </div>
+
+  <div class="main-content">
+    <div class="content-box">
+      <p>Just Green is synonymous with today's consumer demand for alternative packaging solutions that support sustainability for their planet. By using annually renewable natural plant fibers, we reduce the impact of petroleum-based products in landfills and plastic polluting the oceans.</p>
+      <p>Just Green packaging and products are made tree-free from varying blends of all-natural pulp fibers; such as Bulrush (reed plant), Wheat Straw, and Bagasse (sugar cane). Depending on your specific packaging strength requirements Bamboo is another renewable raw material option.</p>
+      <p>As part of our commitment to sustainable alternatives to plastic, paper and Styrofoam, Just Green is working on plastic-alternative solutions. Petroleum-free, using 100% Biodegradable Starch Resin, deriving from sources such as corn and potato starches. This starch resin is formulated to literally replace plastic products through existing plastic resin machinery in any factory worldwide.</p>
+      <p>Just Green offers a full line of well-designed, high quality products and packaging that naturally do not contain genetically modified organisms (GMO free) and come from annually renewable resources.</p>
+      <p>If you are interested in our private label program or receiving a complete product list please <a href="contact-us.html">contact us</a>.</p>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sus-badge sidebar-badge">
+      <p class="sus-title">SUSTAINABILITY</p>
+      <p class="sus-title"><span class="sus-amp">&amp;</span> ECOLOGY</p>
+      <p>Committed to sustainable, environmental solutions.</p>
+    </div>
+    <div class="qa-badge sidebar-badge">
+      <p class="checkmark">&#10003;</p>
+      <p class="qa-title">QUALITY</p>
+      <p class="qa-sub">ASSURANCE</p>
+      <p>A willingness to continually adjust to the needs of clients assures consistency and strict compliance of quality standards.</p>
+    </div>
+    <div class="sidebar-badge">
+      <a href="private-label.html"><img src="https://cakedg.com/wp-content/uploads/2023/06/private-label-badge.png" alt="Private Label"></a>
+      <p>Delivering value through flexibility, function and consistency meeting Your Brand's design, production, packaging, distribution needs.</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <ul class="footer-nav">
+      <li><a href="just-green.html">Just Green</a></li>
+      <li><a href="minstar.html">Minstar</a></li>
+      <li><a href="natures-turn.html">Nature's Turn</a></li>
+      <li><a href="private-label.html">Private Label</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+    <p class="footer-copy">Copyright &copy; 2026 CAKE Development Group</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#9650;</button>
+<script>
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('scrollTop');
+  if (window.scrollY > 300) btn.classList.add('visible');
+  else btn.classList.remove('visible');
+});
+</script>
+
+</body>
+</html>
