@@ -4,25 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minstar - CAKE Development Group</title>
+  <meta name="description" content="Minstar provides everyday household products for preparation, transportation, storage and serving at affordable prices.">
+  <meta property="og:title" content="Minstar - CAKE Development Group">
+  <meta property="og:description" content="Minstar provides everyday household products for preparation, transportation, storage and serving at affordable prices.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luckygoats33.github.io/cakedg/minstar.html">
+  <link rel="canonical" href="https://luckygoats33.github.io/cakedg/minstar.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='4' fill='%23f7931e'/><polygon points='8,5 19,12 8,19' fill='white'/></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header>
   <div class="header-inner">
     <a href="index.html" class="logo">
       <div class="logo-icon">
-        <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="8,5 19,12 8,19"/></svg>
       </div>
       <div class="logo-text">
         CAKE
         <span>DEVELOPMENT GROUP</span>
       </div>
     </a>
-    <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var n=document.querySelector('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">
       <span></span><span></span><span></span>
     </button>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul class="nav-main">
         <li><a href="just-green.html">Just Green</a></li>
         <li><a href="minstar.html" class="active">Minstar</a></li>
@@ -40,8 +49,10 @@
   </div>
 </header>
 
+<main id="main">
+
 <section class="hero">
-  <img src="https://cakedg.com/wp-content/uploads/2023/06/billboard-minstar.jpg" alt="Minstar Products">
+  <img src="https://cakedg.com/wp-content/uploads/2023/06/billboard-minstar.jpg" alt="Minstar household products" width="1140" height="400">
 </section>
 
 <div class="page-content">
@@ -79,15 +90,17 @@
       <p>A willingness to continually adjust to the needs of clients assures consistency and strict compliance of quality standards.</p>
     </div>
     <div class="sidebar-badge">
-      <a href="private-label.html"><img src="https://cakedg.com/wp-content/uploads/2023/06/private-label-badge.png" alt="Private Label"></a>
+      <a href="private-label.html"><img src="https://cakedg.com/wp-content/uploads/2023/06/private-label-badge.png" alt="Private Label" width="140" height="140" loading="lazy"></a>
       <p>Delivering value through flexibility, function and consistency meeting Your Brand's design, production, packaging, distribution needs.</p>
     </div>
     <div class="sidebar-badge">
-      <a href="natures-turn.html"><img src="https://cakedg.com/wp-content/uploads/2023/06/natures-turn-badge.png" alt="Nature's Turn"></a>
+      <a href="natures-turn.html"><img src="https://cakedg.com/wp-content/uploads/2023/06/natures-turn-badge.png" alt="Nature's Turn" width="140" height="140" loading="lazy"></a>
       <p>Always natural, great tasting products FREE of preservatives, high-fructose corn syrup and artificial colors or flavors.</p>
     </div>
   </aside>
 </div>
+
+</main>
 
 <footer>
   <div class="footer-inner">
@@ -102,7 +115,7 @@
   </div>
 </footer>
 
-<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#9650;</button>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#9650;</button>
 <script>
 window.addEventListener('scroll', function() {
   var btn = document.getElementById('scrollTop');
